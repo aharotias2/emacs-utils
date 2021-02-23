@@ -41,6 +41,17 @@ emacsのカラーテーマを自作する時などに便利に使っていただ
 vala用のテーマを自作しました。シンプルさを心掛けました。色分け以外の機能一切なしです。
 このファイルを(load)関数により読み込んだら、`M-x tt-vala-mode` で起動します。
 
+#### おすすめのtt-vala-mode-hookの設定
+
+    (add-hook 'tt-vala-mode-hook
+          (lambda ()
+            (local-set-key-list
+             '(("C-i" (my-indent my-indent-offset))
+               ("M-i" (my-indent (- 0 my-indent-offset)))
+               ("C-m" (my-newline-and-indent))))
+            (display-line-numbers-mode)
+            (toggle-truncate-lines)))
+
 ### tt-po-mode.el
 
 GetTextのPOファイル用のモードを作りました。色分け以外の機能一切なしです。
