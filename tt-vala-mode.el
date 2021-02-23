@@ -53,6 +53,12 @@
     (if (> auto-indent-offset 0)
         (tt-indent auto-indent-offset))))
 
+(defun string-join (start-mark end-mark delim-mark list &optional func)
+  "This function makes a string formatted as 'start-mark + delimitted-list + end-mark'
+where delimitted-list is a string that each elements of the list are concatanated separated by the delim-mark."
+  (let ((elem-func (if (null func) (lambda (e) e) func)))
+    (concat start-mark (mapconcat elem-func list delim-mark) end-mark)))
+
 (define-generic-mode tt-vala-mode
   ;; comment-list
   '("//" ("/*" . "*/"))
