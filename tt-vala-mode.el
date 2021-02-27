@@ -78,14 +78,12 @@ where delimitted-list is a string that each elements of the list are concatanate
   `(("\".*\"" . font-lock-string-face)
     ("\"\"\".*\"\"\"" . font-lock-string-face)
     ("'[^']*'" . font-lock-string-face)
-    ("[][+-/*%=^~|{}()!&<>;:,.?/@]" . font-lock-builtin-face)
-    (,(string-join
-       "\\(" "\\)" "\\|"
-       '("true" "false" "null" "void"
-         "int" "uint" "long" "string" "double" "int16" "uint16" "int32" "uint32"
-         "int64" "uint64" "float" "bool" "char" "uchar") (lambda (e) (concat "\\b" e "\\b")))
+    ("[][+-/*%=^~|{}()!&<>;:,.?/@$]" . font-lock-builtin-face)
+    (,(regexp-opt '("true" "false" "null" "void" "int" "uint" "long" "string" "double" "int16" "uint16"
+                    "int32" "uint32" "int64" "uint64" "float" "bool" "char" "uchar")
+                  'symbols)
      . font-lock-builtin-face)
-    ("\\b[0-9]+\\b" . font-lock-constant-face))
+    ("\\_<[0-9]+\\_>" . font-lock-constant-face))
 
   ;; auto-mode-list
   '("\\.vala\\'" "\\.vapi\\'")

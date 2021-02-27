@@ -49,8 +49,9 @@ vala用のテーマを自作しました。シンプルさを心掛けました�
              '(("C-i" (my-indent my-indent-offset))
                ("M-i" (my-indent (- 0 my-indent-offset)))
                ("C-m" (my-newline-and-indent))))
+            (setq tab-width 4)
             (display-line-numbers-mode)
-            (toggle-truncate-lines)))
+            (toggle-truncate-lines 1)))
 
 ### tt-po-mode.el
 
