@@ -44,14 +44,16 @@
       (tt-indent-left (- 0 offset)))))
 
 (defun tt-newline-and-indent ()
-  (let ((auto-indent-offset (let ((before-char (char-before (point))))
-                              (if (or (= before-char 123) (= before-char 40))
-                                  tt-indent-offset
-                                0))))
-    (newline)
-    (indent-relative-maybe)
-    (if (> auto-indent-offset 0)
-        (tt-indent auto-indent-offset))))
+  (if (= 0 (- (point) (line-number-at-pos)))
+      (newline)
+    (let ((auto-indent-offset (let ((before-char (char-before (point))))
+                                (if (and (not (null before-char)) (or (= before-char 123) (= before-char 40)))
+                                    tt-indent-offset
+                                  0))))
+      (newline)
+      (indent-relative-maybe)
+      (if (> auto-indent-offset 0)
+          (tt-indent auto-indent-offset)))))
 
 (defun string-join (start-mark end-mark delim-mark list &optional func)
   "This function makes a string formatted as 'start-mark + delimitted-list + end-mark'
@@ -72,18 +74,20 @@ where delimitted-list is a string that each elements of the list are concatanate
     "public" "private" "protected" "internal" "out" "ref" "throws" "requires" "ensures"
     "namespace" "using" "as" "is" "in" "new" "delete" "sizeof" "typeof"
     "this" "base" "get" "set" "construct" "default" "value" "connect"
-    "construct" "static construct" "class construct" "var" "yield" "global" "owned")
+    "construct" "static construct" "class construct" "var" "yield" "global" "owned" "with")
 
   ;; font-lock-list
-  `(("\".*\"" . font-lock-string-face)
-    ("\"\"\".*\"\"\"" . font-lock-string-face)
+  `(("\"\"\".*\"\"\"" . font-lock-string-face)
+    ("\".*\"" . font-lock-string-face)
     ("'[^']*'" . font-lock-string-face)
-    ("[][+-/*%=^~|{}()!&<>;:,.?/@$]" . font-lock-builtin-face)
-    (,(regexp-opt '("true" "false" "null" "void" "int" "uint" "long" "string" "double" "int16" "uint16"
+    ("[][+-/*%=^~|{}()!&><;:,.?/@$]" . font-lock-builtin-face)
+    (,(regexp-opt '("true" "false" "null" "void" "int" "uint" "long" "string" "double" "int8" "uint8" "int16" "uint16"
                     "int32" "uint32" "int64" "uint64" "float" "bool" "char" "uchar")
                   'symbols)
      . font-lock-builtin-face)
-    ("\\_<[0-9]+\\_>" . font-lock-constant-face))
+    ("\\<[0-9]+\\>" . font-lock-constant-face)
+    ("\\<[@A-Z_][A-Z0-9_]+\\>" . font-lock-constant-face)
+    ("\\<[A-Z][A-Za-z0-9_]+\\>" . font-lock-type-face))
 
   ;; auto-mode-list
   '("\\.vala\\'" "\\.vapi\\'")
