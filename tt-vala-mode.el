@@ -85,8 +85,8 @@ where delimitted-list is a string that each elements of the list are concatanate
                     "int32" "uint32" "int64" "uint64" "float" "bool" "char" "uchar")
                   'symbols)
      . font-lock-builtin-face)
-    ("\\<[0-9]+\\>" . font-lock-constant-face)
     ("\\<[@A-Z_][A-Z0-9_]+\\>" . font-lock-constant-face)
+    ("\\<[0-9]+\\>" . font-lock-constant-face)
     ("\\<[A-Z][A-Za-z0-9_]+\\>" . font-lock-type-face))
 
   ;; auto-mode-list
