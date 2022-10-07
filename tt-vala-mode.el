@@ -66,23 +66,23 @@ where delimitted-list is a string that each elements of the list are concatanate
   '("//" ("/*" . "*/"))
 
   ;; keyword-list
-  '("if" "else" "switch" "case" "default" "do" "while" "for" "foreach" "in"
-    "break" "continue" "return" "try" "catch" "finally" "throw" "lock"
-    "class" "interface" "struct" "enum" "delegate" "errordomain"
-    "const" "weak" "unowned" "dynamic" "callback" "begin" "end"
-    "abstract" "virtual" "override" "signal" "extern" "static" "async" "inline" "new"
-    "public" "private" "protected" "internal" "out" "ref" "throws" "requires" "ensures"
-    "namespace" "using" "as" "is" "in" "new" "delete" "sizeof" "typeof"
-    "this" "base" "get" "set" "construct" "default" "value" "connect"
-    "construct" "static construct" "class construct" "var" "yield" "global" "owned" "with")
+  '("if" "else" "switch" "case" "default" "do" "while" "for" "foreach" "in" "break"
+    "continue" "return" "try" "catch" "finally" "throw" "lock" "class" "interface"
+    "struct" "enum" "delegate" "errordomain" "const" "weak" "unowned" "dynamic"
+    "callback" "begin" "end" "abstract" "virtual" "override" "signal" "extern"
+    "static" "async" "inline" "new" "public" "private" "protected" "internal" "out"
+    "ref" "throws" "requires" "ensures" "namespace" "using" "as" "is" "in" "new"
+    "delete" "sizeof" "typeof" "this" "base" "get" "set" "construct" "default"
+    "value" "connect" "construct" "static construct" "class construct" "var" "yield"
+    "global" "owned" "with")
 
   ;; font-lock-list
   `(("\"\"\".*\"\"\"" . font-lock-string-face)
     ("\".*\"" . font-lock-string-face)
     ("'[^']*'" . font-lock-string-face)
     ("[][+-/*%=^~|{}()!&><;:,.?/@$]" . font-lock-builtin-face)
-    (,(regexp-opt '("true" "false" "null" "void" "int" "uint" "long" "string" "double" "int8" "uint8" "int16" "uint16"
-                    "int32" "uint32" "int64" "uint64" "float" "bool" "char" "uchar")
+    (,(regexp-opt '("true" "false" "null" "void" "int" "uint" "long" "string" "double" "int8" "uint8"
+                    "int16" "uint16" "int32" "uint32" "int64" "uint64" "float" "bool" "char" "uchar")
                   'symbols)
      . font-lock-builtin-face)
     ("\\<[@A-Z_][A-Z0-9_]+\\>" . font-lock-constant-face)

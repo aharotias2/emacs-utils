@@ -1,4 +1,4 @@
-;;; mito-zuki-light-theme.el --- color theme suitable for color-blind users
+;;; simpleblue-theme.el --- color theme suitable for color-blind users
 
 ;; Copyright (C) 2011-2020 Free Software Foundation, Inc.
 
@@ -21,7 +21,7 @@
 
 ;;; Code:
 
-(deftheme valadoc-dark
+(deftheme simpleblue
   "Face colors suitable for red/green color-blind users.
 The color palette is from B. Wong, Nature Methods 8, 441 (2011).
 It is intended to provide good variability while being easily
@@ -45,29 +45,29 @@ Ansi-Color faces are included.")
       (basic-vermillion "#d55e00")
       (basic-lightpurple "#cc79a7")
       (basic-purple "darkmagenta")
-      (basic-purple "magenta")
       (basic-bluegray "#848ea9")
-      (basic-lightgray "#DDDDDD")
-      (basic-darkgray "#333333")
-      (basic-gray "#999999"))
+      (basic-lightgray "gray90")
+      (basic-darkgray "gray25")
+      (basic-gray "gray60"))
   (let* ((class '((class color) (min-colors 89)))
-         (valadoc-fg basic-lightgray)
-         (valadoc-bg basic-darkgray)
-         (main-keyword basic-orange)
-         (main-literal basic-lightgreen)
+         (simpleblue-fg basic-black)
+         (simpleblue-bg basic-white)
+         (main-keyword basic-blue)
+         (main-literal basic-green)
+	 (main-doc basic-vermillion)
          (main-comment basic-lightcyan)
-         (main-function-name basic-lightgreen)
-         (main-builtin basic-lightpurple)
-         (main-type-name basic-darkblue)
-         (main-label basic-lightblue)
+         (main-function-name basic-orange)
+         (main-builtin basic-purple)
+         (main-type-name basic-lightpurple)
+         (main-label basic-darkblue)
          (space-fg basic-lightgray)
          (newline-fg basic-lightgray)
-         (fringe-bg basic-black)
-         (fringe-fg basic-gray))
+         (fringe-bg basic-white)
+         (fringe-fg basic-darkgray))
     (custom-theme-set-faces
-     'valadoc-dark
-     `(default                      ((,class (:foreground ,valadoc-fg
-                                              :background ,valadoc-bg))))
+     'simpleblue
+     `(default                      ((,class (:foreground ,simpleblue-fg
+                                              :background ,simpleblue-bg))))
      `(cursor                       ((,class (:background "tomato"))))
      ;; Highlighting faces
      `(fringe                       ((,class (:background ,fringe-bg
@@ -82,30 +82,30 @@ Ansi-Color faces are included.")
      `(lazy-highlight               ((,class (:foreground "white"
                                               :background ,basic-lightpurple))))
      `(trailing-whitespace          ((,class (:background ,basic-vermillion))))
-     `(whitespace-space             ((,class (:background ,valadoc-bg
+     `(whitespace-space             ((,class (:background ,simpleblue-bg
                                               :foreground ,space-fg))))
-     `(whitespace-trailing          ((,class (:background ,valadoc-bg
+     `(whitespace-trailing          ((,class (:background ,simpleblue-bg
                                               :foreground ,space-fg))))
-     `(whitespace-tab               ((,class (:background ,valadoc-bg
+     `(whitespace-tab               ((,class (:background ,simpleblue-bg
                                               :foreground ,space-fg))))
-     `(whitespace-line              ((,class (:background ,valadoc-bg
+     `(whitespace-line              ((,class (:background ,simpleblue-bg
                                               :foreground ,space-fg))))
-     `(whitespace-newline           ((,class (:background ,valadoc-bg
+     `(whitespace-newline           ((,class (:background ,simpleblue-bg
                                               :foreground ,newline-fg))))
      ;; line numbers (Emacs 26.1 and above)
-     `(line-number                  ((,class (:foreground ,fringe-fg
-                                              :background ,fringe-bg))))
+     `(line-number                  ((,class (:foreground ,basic-lightcyan
+                                              :background ,basic-white))))
      `(line-number-current-line     ((,class (:inherit line-number
                                               :foreground ,basic-orange))))
      ;; Mode line faces
      `(mode-line                    ((,class (:box (:line-width -1
                                                     :style released-button)
-                                              :background "gray"
-                                              :foreground "midnightblue"))))
+                                              :background ,basic-lightgray
+                                              :foreground ,basic-darkgray))))
      `(mode-line-inactive           ((,class (:box (:line-width -1
                                                     :style released-button)
-                                              :background "gray"
-                                              :foreground "gray30"
+                                              :background ,basic-gray
+                                              :foreground ,basic-darkgray
                                               :bold t))))
      ;; Escape and prompt faces
      `(minibuffer-prompt            ((,class (:weight bold
@@ -119,6 +119,7 @@ Ansi-Color faces are included.")
      `(success                      ((,class (:foreground ,basic-bluegreen))))
      ;; Font lock faces
      `(font-lock-builtin-face       ((,class (:foreground ,main-builtin))))
+     `(font-lock-doc-face           ((,class (:foreground ,main-doc))))
      `(font-lock-keyword-face       ((,class (:weight bold
                                               :foreground ,main-keyword))))
      `(font-lock-comment-face       ((,class (:slant italic
@@ -126,10 +127,11 @@ Ansi-Color faces are included.")
      `(font-lock-string-face        ((,class (:foreground ,main-literal))))
      `(font-lock-function-name-face ((,class (:foreground ,main-function-name
                                               :weight bold))))
-     `(font-lock-type-face          ((,class (:foreground ,main-type-name))))
+     `(font-lock-type-face          ((,class (:foreground ,main-type-name
+                                              :weight bold))))
      `(font-lock-constant-face      ((,class (:foreground ,main-label))))
      `(font-lock-variable-name-face ((,class (:foreground ,color_burgundy))))
-     `(font-lock-preprocessor-face  ((,class (:foreground "red"))))
+     `(font-lock-preprocessor-face  ((,class (:foreground ,basic-red))))
      ;; Button and link faces
      `(link                         ((,class (:underline t
                                               :foreground ,basic-blue))))
@@ -160,33 +162,33 @@ Ansi-Color faces are included.")
      `(org-agenda-date              ((,class (:foreground ,basic-red))))
      `(org-agenda-date-today        ((,class (:foreground ,basic-green))))
      `(org-agenda-structure         ((,class (:inherit ,basic-blue))))
-     `(org-archived                 ((,class (:foreground ,valadoc-fg
+     `(org-archived                 ((,class (:foreground ,simpleblue-fg
                                               :weight bold))))
-     `(org-block                    ((,class (:foreground ,valadoc-fg))))
+     `(org-block                    ((,class (:foreground ,simpleblue-fg))))
      `(org-quote                    ((,class (:inherit font-lock-string-face))))
      `(org-verse                    ((,class (:inherit font-lock-string-face))))
      `(org-meta-line                ((,class (:inherit font-lock-comment-face))))
      `(org-block-begin-line         ((,class (:inherit org-meta-line))))
      `(org-block-background         ((,class (:inherit org-meta-line))))
      `(org-block-end-line           ((,class (:inherit org-meta-line))))
-     `(org-checkbox                 ((,class (:background ,valadoc-bg
-                                              :foreground ,valadoc-fg
+     `(org-checkbox                 ((,class (:background ,simpleblue-bg
+                                              :foreground ,simpleblue-fg
                                               :box (:line-width 1
                                                     :style pressed-button)))))
      `(org-date                     ((,class (:inherit org-agenda-date))))
      `(org-date-selected            ((,class (:inherit font-lock-function-name-face))))
-     `(org-deadline-announce        ((,class (:foreground ,valadoc-fg))))
+     `(org-deadline-announce        ((,class (:foreground ,simpleblue-fg))))
      `(org-done                     ((,class (:foreground ,basic-bluegray
                                               :weight bold))))
      `(org-document-title           ((,class (:weight bold))))
      `(org-document-info            ((,class (:foreground ,basic-orange))))
      `(org-document-info-keyword    ((,class (:foreground ,basic-yellow))))
-     `(org-ellipsis                 ((,class (:foreground ,valadoc-bg))))
+     `(org-ellipsis                 ((,class (:foreground ,simpleblue-bg))))
      `(org-footnote                 ((,class (:foreground ,basic-bluegray
                                               :underline t))))
      `(org-formula                  ((,class (:foreground ,basic-yellow))))
      `(org-headline-done            ((,class (:foreground ,basic-lightblue))))
-     `(org-hide                     ((,class (:foreground ,valadoc-bg))))
+     `(org-hide                     ((,class (:foreground ,simpleblue-bg))))
      `(org-level-1                  ((,class (:weight bold
                                               :foreground ,color_carrot_orange
                                               :height 1.8))))
@@ -221,20 +223,20 @@ Ansi-Color faces are included.")
      `(org-scheduled-previously     ((,class (:foreground ,basic-orange))))
      `(org-scheduled-today          ((,class (:foreground ,basic-bluegray))))
      `(org-special-keyword          ((,class (:inherit font-lock-doc-face))))
-     `(org-table                    ((,class (:foreground ,valadoc-fg))))
+     `(org-table                    ((,class (:foreground ,simpleblue-fg))))
      `(org-tag                      ((,class (:slant italic))))
-     `(org-time-grid                ((,class (:foreground ,valadoc-bg))))
+     `(org-time-grid                ((,class (:foreground ,simpleblue-bg))))
      `(org-todo                     ((,class (:foreground ,basic-orange
                                               :weight bold))))
      `(org-upcoming-deadline        ((,class (:inherit font-lock-keyword-face))))
-     `(org-verbatim                 ((,class (:foreground ,valadoc-fg))))
-     `(org-code                     ((,class (:foreground ,valadoc-fg
-                                              :background ,valadoc-bg))))
+     `(org-verbatim                 ((,class (:foreground ,simpleblue-fg))))
+     `(org-code                     ((,class (:foreground ,simpleblue-fg
+                                              :background ,simpleblue-bg))))
      `(org-warning                  ((,class (:foreground ,basic-orange
                                               :weight bold
                                               :underline nil))))
-     `(org-column                   ((,class (:background ,valadoc-bg))))
-     `(org-column-title             ((,class (:background ,valadoc-bg
+     `(org-column                   ((,class (:background ,simpleblue-bg))))
+     `(org-column-title             ((,class (:background ,simpleblue-bg
                                               :underline t
                                               :weight bold))))
      ;; Gnus faces
@@ -294,10 +296,10 @@ Ansi-Color faces are included.")
                                               :underline ,basic-lightpurple)))))
 
     (custom-theme-set-variables
-     'valadoc-dark
+     'simpleblue
      `(ansi-color-names-vector ["black" ,basic-vermillion ,basic-bluegreen ,basic-yellow
                                 ,basic-blue ,basic-lightpurple ,basic-lightblue "white"]))))
 
-(provide-theme 'valadoc-dark)
+(provide-theme 'simpleblue)
 
-;;; mito-zuki-light-theme.el ends here
+;;; simpleblue-theme.el ends here

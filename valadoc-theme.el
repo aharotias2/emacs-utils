@@ -46,9 +46,9 @@ Ansi-Color faces are included.")
       (basic-lightpurple "#cc79a7")
       (basic-purple "darkmagenta")
       (basic-bluegray "#848ea9")
-      (basic-lightgray "#DDDDDD")
-      (basic-darkgray "#333333")
-      (basic-gray "#999999"))
+      (basic-lightgray "gray90")
+      (basic-darkgray "gray25")
+      (basic-gray "gray60"))
   (let* ((class '((class color) (min-colors 89)))
          (valadoc-fg basic-black)
          (valadoc-bg basic-white)
@@ -57,11 +57,11 @@ Ansi-Color faces are included.")
          (main-comment basic-lightcyan)
          (main-function-name basic-green)
          (main-builtin basic-purple)
-         (main-type-name basic-darkblue)
-         (main-label basic-blue)
+         (main-type-name basic-blue)
+         (main-label basic-darkblue)
          (space-fg basic-lightgray)
          (newline-fg basic-lightgray)
-         (fringe-bg basic-lightgray)
+         (fringe-bg basic-white)
          (fringe-fg basic-darkgray))
     (custom-theme-set-faces
      'valadoc
@@ -92,19 +92,19 @@ Ansi-Color faces are included.")
      `(whitespace-newline           ((,class (:background ,valadoc-bg
                                               :foreground ,newline-fg))))
      ;; line numbers (Emacs 26.1 and above)
-     `(line-number                  ((,class (:foreground ,fringe-fg
-                                              :background ,fringe-bg))))
+     `(line-number                  ((,class (:foreground ,basic-lightcyan
+                                              :background ,basic-white))))
      `(line-number-current-line     ((,class (:inherit line-number
                                               :foreground ,basic-orange))))
      ;; Mode line faces
      `(mode-line                    ((,class (:box (:line-width -1
                                                     :style released-button)
-                                              :background "gray"
-                                              :foreground "midnightblue"))))
+                                              :background ,basic-lightgray
+                                              :foreground ,basic-darkgray))))
      `(mode-line-inactive           ((,class (:box (:line-width -1
                                                     :style released-button)
-                                              :background "gray"
-                                              :foreground "gray30"
+                                              :background ,basic-gray
+                                              :foreground ,basic-darkgray
                                               :bold t))))
      ;; Escape and prompt faces
      `(minibuffer-prompt            ((,class (:weight bold
@@ -125,7 +125,8 @@ Ansi-Color faces are included.")
      `(font-lock-string-face        ((,class (:foreground ,main-literal))))
      `(font-lock-function-name-face ((,class (:foreground ,main-function-name
                                               :weight bold))))
-     `(font-lock-type-face          ((,class (:foreground ,main-type-name))))
+     `(font-lock-type-face          ((,class (:foreground ,main-type-name
+                                              :weight bold))))
      `(font-lock-constant-face      ((,class (:foreground ,main-label))))
      `(font-lock-variable-name-face ((,class (:foreground ,color_burgundy))))
      `(font-lock-preprocessor-face  ((,class (:foreground "red"))))
