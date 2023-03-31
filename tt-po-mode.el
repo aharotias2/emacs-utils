@@ -29,3 +29,5 @@
   
   ;; &optional docstring
   "This is a major mode for editing gettext's po files")
+
+(provide 'tt-po-mode)

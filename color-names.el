@@ -7,579 +7,581 @@
 ;;
 ;; URL: https://www.colordic.org/y
 ;;
-;; 命名規則…洋色大辞典に記載された色の名前の頭に "color_" をつけ、
-;;           単語間のスペースを"_" (アンダースコア) に変換する。
+;; 命名規則…洋色大辞典に記載された色の名前の頭に "color-" をつけ、
+;;           単語間のスペースを"-" (アンダースコア) に変換する。
 ;;
 ;; 使い方…洋色大辞典 (https://www.colordic.org/y) を見て使いたい色を見付け、
 ;;         上の命名規則によって決められた色名の変数をemacs-lispコードで使用する。
 
 ;;コーラルレッド
-(setq color_coral_red "#ef857d")
+(setq color-coral-red "#ef857d")
 ;;サンシャインイエロー
-(setq color_sunshine_yellow "#ffedab")
+(setq color-sunshine-yellow "#ffedab")
 ;;アイスグリーン
-(setq color_ice_green "#a3d6cc")
+(setq color-ice-green "#a3d6cc")
 ;;ウイスタリア
-(setq color_wistaria "#8d93c8")
+(setq color-wistaria "#8d93c8")
 ;;ピンクアーモンド
-(setq color_pink_almond "#e3acae")
+(setq color-pink-almond "#e3acae")
 ;;ポピーレッド
-(setq color_poppy_red "#ea5550")
+(setq color-poppy-red "#ea5550")
 ;;クリームイエロー
-(setq color_cream_yellow "#fff3b8")
+(setq color-cream-yellow "#fff3b8")
 ;;ターコイズグリーン
-(setq color_turquoise_green "#00947a")
+(setq color-turquoise-green "#00947a")
 ;;ブルーラベンダー
-(setq color_blue_lavender "#a4a8d4")
+(setq color-blue-lavender "#a4a8d4")
 ;;ローズダスト
-(setq color_rose_dust "#e6c0c0")
+(setq color-rose-dust "#e6c0c0")
 ;;レッド
-(setq color_red "#ea5550")
+(setq color-red "#ea5550")
 ;;ネープルスイエロー
-(setq color_naples_yellow "#fdd35c")
+(setq color-naples-yellow "#fdd35c")
 ;;シーグリーン
-(setq color_sea_green "#00ac97")
+(setq color-sea-green "#00ac97")
 ;;パンジー
-(setq color_pannsy "#4d4398")
+(setq color-pannsy "#4d4398")
 ;;ホワイト
-(setq color_white "#ffffff")
+(setq color-white "#ffffff")
 ;;トマトレッド
-(setq color_tomato_red "#ea5549")
+(setq color-tomato-red "#ea5549")
 ;;トパーズ
-(setq color_topaz "#e9bc00")
+(setq color-topaz "#e9bc00")
 ;;ペパーミントグリーン
-(setq color_peppermint_green "#00ac9a")
+(setq color-peppermint-green "#00ac9a")
 ;;バイオレット
-(setq color_violet "#5a4498")
+(setq color-violet "#5a4498")
 ;;スノーホワイト
-(setq color_snow_white "#fafdff")
+(setq color-snow-white "#fafdff")
 ;;バーミリオン
-(setq color_vermilion "#ea553a")
+(setq color-vermilion "#ea553a")
 ;;クロムイエロー
-(setq color_chrome_yellow "#fcc800")
+(setq color-chrome-yellow "#fcc800")
 ;;ピーコックグリーン
-(setq color_peacock_green "#00a497")
+(setq color-peacock-green "#00a497")
 ;;ヘリオトロープ
-(setq color_heliotrope "#9079b6")
+(setq color-heliotrope "#9079b6")
 ;;ピンクホワイト
-(setq color_pink_white "#fef9fb")
+(setq color-pink-white "#fef9fb")
 ;;スカーレット
-(setq color_scarlet "#ea5532")
+(setq color-scarlet "#ea5532")
 ;;クリーム
-(setq color_cream "#e3d7a3")
+(setq color-cream "#e3d7a3")
 ;;ナイルブルー
-(setq color_nile_blue "#2cb4ad")
+(setq color-nile-blue "#2cb4ad")
 ;;ディープロイヤルパープル
-(setq color_deep_royal_purple "#47266e")
+(setq color-deep-royal-purple "#47266e")
 ;;ミルキーホワイト
-(setq color_milky_white "#fffff9")
+(setq color-milky-white "#fffff9")
 ;;キャロットオレンジ
-(setq color_carrot_orange "#ed6d35")
+(setq color-carrot-orange "#ed6d35")
 ;;ストロー
-(setq color_straw "#ece093")
+(setq color-straw "#ece093")
 ;;サックスブルー
-(setq color_saxe_blue "#418b89")
+(setq color-saxe-blue "#418b89")
 ;;グレープ
-(setq color_grape "#56256e")
+(setq color-grape "#56256e")
 ;;アンバーホワイト
-(setq color_amber_white "#fff9f5")
+(setq color-amber-white "#fff9f5")
 ;;チャイニーズレッド
-(setq color_chinese_red "#ed6d46")
+(setq color-chinese-red "#ed6d46")
 ;;ジャスミンイエロー
-(setq color_jasmine_yellow "#edde7b")
+(setq color-jasmine-yellow "#edde7b")
 ;;スレートグリーン
-(setq color_slate_green "#3c7170")
+(setq color-slate-green "#3c7170")
 ;;モーブ
-(setq color_mauve "#915da3")
+(setq color-mauve "#915da3")
 ;;ラベンダーアイス
-(setq color_lavender_ice "#f7f6fb")
+(setq color-lavender-ice "#f7f6fb")
 ;;テラコッタ
-(setq color_terracotta "#bd6856")
+(setq color-terracotta "#bd6856")
 ;;アンティックゴールド
-(setq color_antique_gold "#c1ab05")
+(setq color-antique-gold "#c1ab05")
 ;;テールグリーン
-(setq color_teal_green "#006a6c")
+(setq color-teal-green "#006a6c")
 ;;アイリス
-(setq color_iris "#c7a5cc")
+(setq color-iris "#c7a5cc")
 ;;パールホワイト
-(setq color_pearl_white "#f7f6f5")
+(setq color-pearl-white "#f7f6f5")
 ;;ココアブラウン
-(setq color_cocoa_brown "#98605e")
+(setq color-cocoa-brown "#98605e")
 ;;オリーブ
-(setq color_olive "#72640c")
+(setq color-olive "#72640c")
 ;;アクアグリーン
-(setq color_aqua_green "#88bfbf")
+(setq color-aqua-green "#88bfbf")
 ;;ライラック
-(setq color_lilac "#d1bada")
+(setq color-lilac "#d1bada")
 ;;アイボリー
-(setq color_ivory "#f8f4e6")
+(setq color-ivory "#f8f4e6")
 ;;マホガニー
-(setq color_mahogany "#6b3f31")
+(setq color-mahogany "#6b3f31")
 ;;オリーブドラブ
-(setq color_olive_drab "#665a1a")
+(setq color-olive-drab "#665a1a")
 ;;アクアマリン
-(setq color_aquamarine "#67b5b7")
+(setq color-aquamarine "#67b5b7")
 ;;ラベンダー
-(setq color_lavender "#cab8d9")
+(setq color-lavender "#cab8d9")
 ;;パウダーピンク
-(setq color_powder_pink "#f5ecf4")
+(setq color-powder-pink "#f5ecf4")
 ;;チョコレート
-(setq color_chocolate "#6c3524")
+(setq color-chocolate "#6c3524")
 ;;ジョンブリアン
-(setq color_jaune_brillant "#ffdc00")
+(setq color-jaune-brillant "#ffdc00")
 ;;ピーコックブルー
-(setq color_peacock_blue "#009e9f")
+(setq color-peacock-blue "#009e9f")
 ;;クロッカス
-(setq color_crocus "#b79fcb")
+(setq color-crocus "#b79fcb")
 ;;シルバーホワイト
-(setq color_silver_white "#efefef")
+(setq color-silver-white "#efefef")
 ;;マルーン
-(setq color_marron "#6a1917")
+(setq color-marron "#6a1917")
 ;;イエロー
-(setq color_yellow "#ffdc00")
+(setq color-yellow "#ffdc00")
 ;;ターコイズ
-(setq color_turquoise "#009b9f")
+(setq color-turquoise "#009b9f")
 ;;ラベンダーモーブ
-(setq color_lavender_mauve "#a688bd")
+(setq color-lavender-mauve "#a688bd")
 ;;フロスティグレイ
-(setq color_frosty_gray "#e8ece9")
+(setq color-frosty-gray "#e8ece9")
 ;;セピア
-(setq color_sepia "#622d18")
+(setq color-sepia "#622d18")
 ;;シトラス
-(setq color_citrus "#eddc44")
+(setq color-citrus "#eddc44")
 ;;カプリブルー
-(setq color_capri_blue "#00a3a7")
+(setq color-capri-blue "#00a3a7")
 ;;パープル
-(setq color_purple "#9b72b0")
+(setq color-purple "#9b72b0")
 ;;シルバーピンク
-(setq color_silver_pink "#eeeaec")
+(setq color-silver-pink "#eeeaec")
 ;;コーヒー色
-(setq color_coffee "#7b5544")
+(setq color-coffee "#7b5544")
 ;;ライムライト
-(setq color_limelight "#fff799")
+(setq color-limelight "#fff799")
 ;;ケンブリッジブルー
-(setq color_cambridge_blue "#25b7c0")
+(setq color-cambridge-blue "#25b7c0")
 ;;ロイヤルパープル
-(setq color_royal_purple "#7f1184")
+(setq color-royal-purple "#7f1184")
 ;;ベージュカメオ
-(setq color_beige_cameo "#eee9e6")
+(setq color-beige-cameo "#eee9e6")
 ;;ブラウン
-(setq color_brown "#8f6552")
+(setq color-brown "#8f6552")
 ;;カナリヤ
-(setq color_canary_yellow "#fff462")
+(setq color-canary-yellow "#fff462")
 ;;ターコイズブルー
-(setq color_turquoise_blue "#00afcc")
+(setq color-turquoise-blue "#00afcc")
 ;;レーズン
-(setq color_raisin "#6b395f")
+(setq color-raisin "#6b395f")
 ;;エクリュ
-(setq color_ecru "#eee7e0")
+(setq color-ecru "#eee7e0")
 ;;バーントシェンナ
-(setq color_burnt_sienna "#bb5535")
+(setq color-burnt-sienna "#bb5535")
 ;;ミモザ
-(setq color_mimosa "#fff462")
+(setq color-mimosa "#fff462")
 ;;ホライズンブルー
-(setq color_horizon_blue "#82cddd")
+(setq color-horizon-blue "#82cddd")
 ;;プラム
-(setq color_plum "#6c2463")
+(setq color-plum "#6c2463")
 ;;ピンクベージュ
-(setq color_pink_beige "#ede4e1")
+(setq color-pink-beige "#ede4e1")
 ;;アンバーローズ
-(setq color_amber_rose "#e6bfb2")
+(setq color-amber-rose "#e6bfb2")
 ;;レモンイエロー
-(setq color_lemon_yellow "#fff352")
+(setq color-lemon-yellow "#fff352")
 ;;サマーシャワー
-(setq color_summer_shower "#a1d8e2")
+(setq color-summer-shower "#a1d8e2")
 ;;ラズベリー
-(setq color_raspberry "#841a75")
+(setq color-raspberry "#841a75")
 ;;フロスティホワイト
-(setq color_frosty_white "#e6eae6")
+(setq color-frosty-white "#e6eae6")
 ;;ベージュローゼ
-(setq color_beige_rose "#e8d3ca")
+(setq color-beige-rose "#e8d3ca")
 ;;メロンイエロー
-(setq color_melon_yellow "#e0de94")
+(setq color-melon-yellow "#e0de94")
 ;;ホリゾンブルー
-(setq color_horizon_blue "#a1d8e6")
+(setq color-horizon-blue "#a1d8e6")
 ;;フランボワーズ
-(setq color_framboise "#9a0d7c")
+(setq color-framboise "#9a0d7c")
 ;;オイスターホワイト
-(setq color_oyster_white "#eae8e1")
+(setq color-oyster-white "#eae8e1")
 ;;サーモンピンク
-(setq color_salmon_pink "#f3a68c")
+(setq color-salmon-pink "#f3a68c")
 ;;シャルトルーズイエロー
-(setq color_chartreuse_yellow "#e3e548")
+(setq color-chartreuse-yellow "#e3e548")
 ;;セルリアンブルー
-(setq color_cerulean_blue "#008db7")
+(setq color-cerulean-blue "#008db7")
 ;;ダリアパープル
-(setq color_dahlia_purple "#a50082")
+(setq color-dahlia-purple "#a50082")
 ;;ウィステリアミスト
-(setq color_wisteria_mist "#d3d6dd")
+(setq color-wisteria-mist "#d3d6dd")
 ;;サハラ
-(setq color_sahara "#e29676")
+(setq color-sahara "#e29676")
 ;;ライムイエロー
-(setq color_lime_yellow "#eaeea2")
+(setq color-lime-yellow "#eaeea2")
 ;;ダックブルー
-(setq color_duck_blue "#007199")
+(setq color-duck-blue "#007199")
 ;;オーキッドパープル
-(setq color_orchid_purple "#af0082")
+(setq color-orchid-purple "#af0082")
 ;;クラウド
-(setq color_cloud "#d4d9df")
+(setq color-cloud "#d4d9df")
 ;;アッシュローズ
-(setq color_ash_rose "#e6bfab")
+(setq color-ash-rose "#e6bfab")
 ;;ライムグリーン
-(setq color_lime_green "#e6eb94")
+(setq color-lime-green "#e6eb94")
 ;;マリンブルー
-(setq color_marine_blue "#006888")
+(setq color-marine-blue "#006888")
 ;;ラズベリーレッド
-(setq color_raspberry_red "#9f166a")
+(setq color-raspberry-red "#9f166a")
 ;;ムーングレイ
-(setq color_moon_gray "#d4d9dc")
+(setq color-moon-gray "#d4d9dc")
 ;;シェルピンク
-(setq color_shell_pink "#fbdac8")
+(setq color-shell-pink "#fbdac8")
 ;;シャトルーズグリーン
-(setq color_chartreuse_green "#d9e367")
+(setq color-chartreuse-green "#d9e367")
 ;;マドンナブルー
-(setq color_madonna_blue "#00608d")
+(setq color-madonna-blue "#00608d")
 ;;オーキッド
-(setq color_orchid "#d9aacd")
+(setq color-orchid "#d9aacd")
 ;;チャイナクレイ
-(setq color_china_clay "#d4dcd3")
+(setq color-china-clay "#d4dcd3")
 ;;ベビーピンク
-(setq color_baby_pink "#fdede4")
+(setq color-baby-pink "#fdede4")
 ;;レタスグリーン
-(setq color_lettuce_green "#d1de4c")
+(setq color-lettuce-green "#d1de4c")
 ;;エジプシャンブルー
-(setq color_egyptian_blue "#0073a8")
+(setq color-egyptian-blue "#0073a8")
 ;;リラ
-(setq color_lilla "#e0b5d3")
+(setq color-lilla "#e0b5d3")
 ;;サンドベージュ
-(setq color_sand_beige "#dcd6d2")
+(setq color-sand-beige "#dcd6d2")
 ;;ネールピンク
-(setq color_nail_pink "#fce4d6")
+(setq color-nail-pink "#fce4d6")
 ;;オリーブグリーン
-(setq color_olive_green "#5f6527")
+(setq color-olive-green "#5f6527")
 ;;ベビーブルー
-(setq color_baby_blue "#bbe2f1")
+(setq color-baby-blue "#bbe2f1")
 ;;ローズタンドル
-(setq color_rose_tendre "#e6afcf")
+(setq color-rose-tendre "#e6afcf")
 ;;オーキッドミスト
-(setq color_orchid_mist "#d3d3d8")
+(setq color-orchid-mist "#d3d3d8")
 ;;ローシェンナ
-(setq color_raw_sienna "#e17b34")
+(setq color-raw-sienna "#e17b34")
 ;;モスグリーン
-(setq color_moss_green "#777e41")
+(setq color-moss-green "#777e41")
 ;;スカイブルー
-(setq color_sky_blue "#a0d8ef")
+(setq color-sky-blue "#a0d8ef")
 ;;オーキッドピンク
-(setq color_orchid_pink "#da81b2")
+(setq color-orchid-pink "#da81b2")
 ;;リードグレイ
-(setq color_reed_gray "#d4d9d6")
+(setq color-reed-gray "#d4d9d6")
 ;;キャラメル
-(setq color_caramel "#bc611e")
+(setq color-caramel "#bc611e")
 ;;グラスグリーン
-(setq color_grass_green "#7b8d42")
+(setq color-grass-green "#7b8d42")
 ;;シャドウブルー
-(setq color_shadow_blue "#719bad")
+(setq color-shadow-blue "#719bad")
 ;;シクラメンピンク
-(setq color_cyclamen_pink "#d04f97")
+(setq color-cyclamen-pink "#d04f97")
 ;;スカイグレイ
-(setq color_sky_gray "#cbd0d3")
+(setq color-sky-gray "#cbd0d3")
 ;;サンセット
-(setq color_sunset "#f6b483")
+(setq color-sunset "#f6b483")
 ;;スプリンググリーン
-(setq color_spring_green "#9cbb1c")
+(setq color-spring-green "#9cbb1c")
 ;;シアン
-(setq color_cyan "#00a1e9")
+(setq color-cyan "#00a1e9")
 ;;マゼンタ
-(setq color_magenta "#e4007f")
+(setq color-magenta "#e4007f")
 ;;ラベンダーグレイ
-(setq color_lavender_gray "#bcbace")
+(setq color-lavender-gray "#bcbace")
 ;;シナモン
-(setq color_cinnamon "#be8f68")
+(setq color-cinnamon "#be8f68")
 ;;リーフグリーン
-(setq color_leaf_green "#9fc24d")
+(setq color-leaf-green "#9fc24d")
 ;;ヨットブルー
-(setq color_yacht_blue "#409ecc")
+(setq color-yacht-blue "#409ecc")
 ;;ブーゲンビリア
-(setq color_bougainvillaea "#e62f8b")
+(setq color-bougainvillaea "#e62f8b")
 ;;シルバー
-(setq color_silver "#c9caca")
+(setq color-silver "#c9caca")
 ;;タン
-(setq color_tan "#bf783e")
+(setq color-tan "#bf783e")
 ;;ホワイトリリー
-(setq color_white_lily "#f0f6da")
+(setq color-white-lily "#f0f6da")
 ;;チョークブルー
-(setq color_chalk_blue "#68a9cf")
+(setq color-chalk-blue "#68a9cf")
 ;;ルビー
-(setq color_ruby "#c70067")
+(setq color-ruby "#c70067")
 ;;パールグレイ
-(setq color_pearl_gray "#c9c9c4")
+(setq color-pearl-gray "#c9c9c4")
 ;;シャンパン
-(setq color_champagne "#e9dacb")
+(setq color-champagne "#e9dacb")
 ;;アスパラガスグリーン
-(setq color_asparagus_green "#dbebc4")
+(setq color-asparagus-green "#dbebc4")
 ;;ピジョンブルー
-(setq color_pigeon_blue "#88b5d3")
+(setq color-pigeon-blue "#88b5d3")
 ;;クラレット
-(setq color_claret "#941f57")
+(setq color-claret "#941f57")
 ;;サンドグレイ
-(setq color_sand_gray "#c9c9c2")
+(setq color-sand-gray "#c9c9c2")
 ;;ピーチ
-(setq color_peach "#fbd8b5")
+(setq color-peach "#fbd8b5")
 ;;シトロングリーン
-(setq color_citron_green "#618e34")
+(setq color-citron-green "#618e34")
 ;;スモークブルー
-(setq color_smoke_blue "#a4c1d7")
+(setq color-smoke-blue "#a4c1d7")
 ;;アザレ
-(setq color_azalee "#d83473")
+(setq color-azalee "#d83473")
 ;;マーブルグレイ
-(setq color_marble_gray "#c0c5c2")
+(setq color-marble-gray "#c0c5c2")
 ;;カフェオレ
-(setq color_cafe_au_lait "#946c45")
+(setq color-cafe-au-lait "#946c45")
 ;;メドウグリーン
-(setq color_meadow_green "#65ab31")
+(setq color-meadow-green "#65ab31")
 ;;フロスティブルー
-(setq color_frosty_blue "#bbdbf3")
+(setq color-frosty-blue "#bbdbf3")
 ;;コスモス
-(setq color_cosmos "#dc6b9a")
+(setq color-cosmos "#dc6b9a")
 ;;オパールグレイ
-(setq color_opal_gray "#bfbec5")
+(setq color-opal-gray "#bfbec5")
 ;;オレンジ
-(setq color_orange "#ee7800")
+(setq color-orange "#ee7800")
 ;;アップルグリーン
-(setq color_apple_green "#a7d28d")
+(setq color-apple-green "#a7d28d")
 ;;ブルーアシード
-(setq color_bleu_acide "#006eb0")
+(setq color-bleu-acide "#006eb0")
 ;;ロータスピンク
-(setq color_lotus_pink "#de82a7")
+(setq color-lotus-pink "#de82a7")
 ;;フレンチグレイ
-(setq color_french_gray "#8da0b6")
+(setq color-french-gray "#8da0b6")
 ;;アプリコット
-(setq color_apricot "#f7b977")
+(setq color-apricot "#f7b977")
 ;;アイビーグリーン
-(setq color_ivy_green "#578a3d")
+(setq color-ivy-green "#578a3d")
 ;;コバルトブルー
-(setq color_cobalt_blue "#0068b7")
+(setq color-cobalt-blue "#0068b7")
 ;;オールドオーキッド
-(setq color_old_orchid "#e3adc1")
+(setq color-old-orchid "#e3adc1")
 ;;ミスト
-(setq color_mist "#b4aeb1")
+(setq color-mist "#b4aeb1")
 ;;アンバー
-(setq color_amber "#c2894b")
+(setq color-amber "#c2894b")
 ;;スピナッチグリーン
-(setq color_spinach_green "#417038")
+(setq color-spinach-green "#417038")
 ;;サファイアブルー
-(setq color_sapphire_blue "#0068b7")
+(setq color-sapphire-blue "#0068b7")
 ;;ローズミスト
-(setq color_rose_mist "#debecc")
+(setq color-rose-mist "#debecc")
 ;;アッシュブロンド
-(setq color_ash_blond "#b5b5ae")
+(setq color-ash-blond "#b5b5ae")
 ;;ブロンズ
-(setq color_bronze "#ac6b25")
+(setq color-bronze "#ac6b25")
 ;;カクタス
-(setq color_cactus "#387d39")
+(setq color-cactus "#387d39")
 ;;スペクトラムブルー
-(setq color_spectrum_blue "#0075c2")
+(setq color-spectrum-blue "#0075c2")
 ;;ローズドラジェ
-(setq color_rose_dragee "#e5c1cd")
+(setq color-rose-dragee "#e5c1cd")
 ;;フォッグ
-(setq color_fog "#abb1b5")
+(setq color-fog "#abb1b5")
 ;;ヴァニラ
-(setq color_vanilla "#e8c59c")
+(setq color-vanilla "#e8c59c")
 ;;スカイグリーン
-(setq color_sky_green "#bee0c2")
+(setq color-sky-green "#bee0c2")
 ;;ブルー
-(setq color_blue "#0075c2")
+(setq color-blue "#0075c2")
 ;;チェリーピンク
-(setq color_cherry_pink "#eb6ea0")
+(setq color-cherry-pink "#eb6ea0")
 ;;ベージュグレイ
-(setq color_beige_gray "#b4ada9")
+(setq color-beige-gray "#b4ada9")
 ;;コルク
-(setq color_cork "#c49a6a")
+(setq color-cork "#c49a6a")
 ;;スペアミント
-(setq color_spearmint "#79c06e")
+(setq color-spearmint "#79c06e")
 ;;ゼニスブルー
-(setq color_zenith_blue "#4496d3")
+(setq color-zenith-blue "#4496d3")
 ;;オペラ
-(setq color_opera "#e95388")
+(setq color-opera "#e95388")
 ;;シルバーグレイ
-(setq color_silver_gray "#afafb0")
+(setq color-silver-gray "#afafb0")
 ;;バーントアンバー
-(setq color_burnt_umber "#6f5436")
+(setq color-burnt-umber "#6f5436")
 ;;ミントグリーン
-(setq color_mint_green "#89c997")
+(setq color-mint-green "#89c997")
 ;;ヘブンリーブルー
-(setq color_heavenly_blue "#68a4d9")
+(setq color-heavenly-blue "#68a4d9")
 ;;ローズレッド
-(setq color_rose_red "#ea618e")
+(setq color-rose-red "#ea618e")
 ;;ストームグレイ
-(setq color_storm_gray "#aaaab0")
+(setq color-storm-gray "#aaaab0")
 ;;ローアンバー
-(setq color_raw_umber "#866629")
+(setq color-raw-umber "#866629")
 ;;パロットグリーン
-(setq color_parrot_green "#37a34a")
+(setq color-parrot-green "#37a34a")
 ;;オーキッドグレイ
-(setq color_orchid_gray "#bcc7d7")
+(setq color-orchid-gray "#bcc7d7")
 ;;オールドライラック
-(setq color_old_lilac "#b0778c")
+(setq color-old-lilac "#b0778c")
 ;;グリーンフォッグ
-(setq color_green_fog "#abb1ad")
+(setq color-green-fog "#abb1ad")
 ;;フレッシュ
-(setq color_flesh "#fad09e")
+(setq color-flesh "#fad09e")
 ;;サマーグリーン
-(setq color_summer_green "#009944")
+(setq color-summer-green "#009944")
 ;;パウダーブルー
-(setq color_powder_blue "#bccddb")
+(setq color-powder-blue "#bccddb")
 ;;ココア色
-(setq color_cocoa "#6e4a55")
+(setq color-cocoa "#6e4a55")
 ;;アッシュグレイ
-(setq color_ash_gray "#9fa09e")
+(setq color-ash-gray "#9fa09e")
 ;;ゴールデンイエロー
-(setq color_golden_yellow "#f6ae54")
+(setq color-golden-yellow "#f6ae54")
 ;;オパールグリーン
-(setq color_opal_green "#bee0ce")
+(setq color-opal-green "#bee0ce")
 ;;ライトブルー
-(setq color_light_blue "#b2cbe4")
+(setq color-light-blue "#b2cbe4")
 ;;ワインレッド
-(setq color_wine_red "#b33e5c")
+(setq color-wine-red "#b33e5c")
 ;;ローズグレイ
-(setq color_rose_gray "#9d8e87")
+(setq color-rose-gray "#9d8e87")
 ;;マンダリンオレンジ
-(setq color_mandarin_orange "#f3981d")
+(setq color-mandarin-orange "#f3981d")
 ;;スプレイグリーン
-(setq color_spray_green "#a4d5bd")
+(setq color-spray-green "#a4d5bd")
 ;;ベイビーブルー
-(setq color_baby_blue "#a2c2e6")
+(setq color-baby-blue "#a2c2e6")
 ;;ガーネット
-(setq color_garnet "#942343")
+(setq color-garnet "#942343")
 ;;エレファントスキン
-(setq color_elephant_skin "#9f9f98")
+(setq color-elephant-skin "#9f9f98")
 ;;マリーゴールド
-(setq color_marigold "#f39800")
+(setq color-marigold "#f39800")
 ;;ボトルグリーン
-(setq color_bottle_green "#004d25")
+(setq color-bottle-green "#004d25")
 ;;デイドリーム
-(setq color_day_dream "#a3b9e0")
+(setq color-day-dream "#a3b9e0")
 ;;コチニールレッド
-(setq color_cochineal_red "#c82c55")
+(setq color-cochineal-red "#c82c55")
 ;;バトルシップグレイ
-(setq color_battleship_gray "#898989")
+(setq color-battleship-gray "#898989")
 ;;エクルベージュ
-(setq color_ecru_beige "#f6e5cc")
+(setq color-ecru-beige "#f6e5cc")
 ;;コバルトグリーン
-(setq color_cobalt_green "#3cb37a")
+(setq color-cobalt-green "#3cb37a")
 ;;サルビアブルー
-(setq color_salvia_blue "#94adda")
+(setq color-salvia-blue "#94adda")
 ;;ストロベリー
-(setq color_strawberry "#e73562")
+(setq color-strawberry "#e73562")
 ;;ストーングレイ
-(setq color_stone_gray "#898880")
+(setq color-stone-gray "#898880")
 ;;オイスター
-(setq color_oyster "#eae1cf")
+(setq color-oyster "#eae1cf")
 ;;エバーグリーン
-(setq color_evergreen "#00984f")
+(setq color-evergreen "#00984f")
 ;;ヒヤシンスブルー
-(setq color_hyacinth_blue "#7a99cf")
+(setq color-hyacinth-blue "#7a99cf")
 ;;ルビーレッド
-(setq color_ruby_red "#e73562")
+(setq color-ruby-red "#e73562")
 ;;モスグレイ
-(setq color_moss_gray "#7e837f")
+(setq color-moss-gray "#7e837f")
 ;;オーカー
-(setq color_ochre "#ba8b40")
+(setq color-ochre "#ba8b40")
 ;;マラカイトグリーン
-(setq color_malachite_green "#009854")
+(setq color-malachite-green "#009854")
 ;;ヒヤシンス
-(setq color_hyacinth "#6c9bd2")
+(setq color-hyacinth "#6c9bd2")
 ;;カーマイン
-(setq color_carmine "#d70035")
+(setq color-carmine "#d70035")
 ;;ダブグレイ
-(setq color_dove_gray "#7d7b83")
+(setq color-dove-gray "#7d7b83")
 ;;カーキー
-(setq color_khaki "#c5a05a")
+(setq color-khaki "#c5a05a")
 ;;グリーン
-(setq color_green "#00a960")
+(setq color-green "#00a960")
 ;;ミッドナイトブルー
-(setq color_midnight_blue "#001e43")
+(setq color-midnight-blue "#001e43")
 ;;シグナルレッド
-(setq color_signal_red "#e8383d")
+(setq color-signal-red "#e8383d")
 ;;グレイ
-(setq color_gray "#7d7d7d")
+(setq color-gray "#7d7d7d")
 ;;バフ
-(setq color_buff "#caac71")
+(setq color-buff "#caac71")
 ;;エメラルドグリーン
-(setq color_emerald_green "#00a968")
+(setq color-emerald-green "#00a968")
 ;;ネービーブルー
-(setq color_navy_blue "#202f55")
+(setq color-navy-blue "#202f55")
 ;;バーガンディー
-(setq color_burgundy "#6c2735")
+(setq color-burgundy "#6c2735")
 ;;スチールグレイ
-(setq color_steel_gray "#736d71")
+(setq color-steel-gray "#736d71")
 ;;サフランイエロー
-(setq color_saffron_yellow "#fac559")
+(setq color-saffron-yellow "#fac559")
 ;;フォレストグリーン
-(setq color_forest_green "#288c66")
+(setq color-forest-green "#288c66")
 ;;プルシャンブルー
-(setq color_prussian_blue "#192f60")
+(setq color-prussian-blue "#192f60")
 ;;ボルドー
-(setq color_bordeaux "#6c272d")
+(setq color-bordeaux "#6c272d")
 ;;アイビーグレイ
-(setq color_ivy_gray "#666c67")
+(setq color-ivy-gray "#666c67")
 ;;パンプキン
-(setq color_pumpkin "#e5a323")
+(setq color-pumpkin "#e5a323")
 ;;ビリジアン
-(setq color_viridian "#00885a")
+(setq color-viridian "#00885a")
 ;;アイアンブルー
-(setq color_iron_blue "#192f60")
+(setq color-iron-blue "#192f60")
 ;;カメリア
-(setq color_camellia "#da536e")
+(setq color-camellia "#da536e")
 ;;スレートグレイ
-(setq color_slate_gray "#626063")
+(setq color-slate-gray "#626063")
 ;;イエローオーカー
-(setq color_yellow_ocher "#c4972f")
+(setq color-yellow-ocher "#c4972f")
 ;;ホーリーグリーン
-(setq color_holly_green "#006948")
+(setq color-holly-green "#006948")
 ;;インディゴ
-(setq color_indigo "#043c78")
+(setq color-indigo "#043c78")
 ;;ローズ
-(setq color_rose "#e95464")
+(setq color-rose "#e95464")
 ;;グラファイト
-(setq color_graphite "#594e52")
+(setq color-graphite "#594e52")
 ;;ブロンド
-(setq color_blond "#f2d58a")
+(setq color-blond "#f2d58a")
 ;;ビリヤードグリーン
-(setq color_billiard_green "#005c42")
+(setq color-billiard-green "#005c42")
 ;;インクブルー
-(setq color_ink_blue "#003f8e")
+(setq color-ink-blue "#003f8e")
 ;;ローズピンク
-(setq color_rose_pink "#f19ca7")
+(setq color-rose-pink "#f19ca7")
 ;;チャコールグレイ
-(setq color_charcoal_gray "#4e454a")
+(setq color-charcoal-gray "#4e454a")
 ;;ベージュ
-(setq color_beige "#eedcb3")
+(setq color-beige "#eedcb3")
 ;;クロムグリーン
-(setq color_chrome_green "#00533f")
+(setq color-chrome-green "#00533f")
 ;;オリエンタルブルー
-(setq color_oriental_blue "#26499d")
+(setq color-oriental-blue "#26499d")
 ;;ピンク
-(setq color_pink "#f5b2b2")
+(setq color-pink "#f5b2b2")
 ;;トープ
-(setq color_taupe "#504946")
+(setq color-taupe "#504946")
 ;;ビスケット
-(setq color_biscuit "#ead7a4")
+(setq color-biscuit "#ead7a4")
 ;;アンティークグリーン
-(setq color_antique_green "#54917f")
+(setq color-antique-green "#54917f")
 ;;ウルトラマリンブルー
-(setq color_ultramarine_blue "#4753a2")
+(setq color-ultramarine-blue "#4753a2")
 ;;フラミンゴピンク
-(setq color_flamingo_pink "#f5b2ac")
+(setq color-flamingo-pink "#f5b2ac")
 ;;ランプブラック
-(setq color_lamp_black "#24140e")
+(setq color-lamp-black "#24140e")
 ;;レグホーン
-(setq color_leghorn "#ffe9a9")
+(setq color-leghorn "#ffe9a9")
 ;;ウォーターグリーン
-(setq color_water_green "#a5c9c1")
+(setq color-water-green "#a5c9c1")
 ;;ウルトラマリン
-(setq color_ultramarine "#434da2")
+(setq color-ultramarine "#434da2")
 ;;オールドローズ
-(setq color_old_rose "#e29399")
+(setq color-old-rose "#e29399")
 ;;ブラック
-(setq color_black "#000000")
+(setq color-black "#000000")
+
+(provide 'color-names)

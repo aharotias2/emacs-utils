@@ -97,3 +97,5 @@ where delimitted-list is a string that each elements of the list are concatanate
   
   ;; &optional docstring
   "This is a major mode for editing vala programming language")
+
+(provide 'tt-vala-mode)

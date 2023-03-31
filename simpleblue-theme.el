@@ -98,15 +98,20 @@ Ansi-Color faces are included.")
      `(line-number-current-line     ((,class (:inherit line-number
                                               :foreground ,basic-orange))))
      ;; Mode line faces
-     `(mode-line                    ((,class (:box (:line-width -1
-                                                    :style released-button)
-                                              :background ,basic-lightgray
-                                              :foreground ,basic-darkgray))))
-     `(mode-line-inactive           ((,class (:box (:line-width -1
-                                                    :style released-button)
-                                              :background ,basic-gray
-                                              :foreground ,basic-darkgray
-                                              :bold t))))
+;;     `(mode-line                    ((,class (:box (:line-width -1
+;;                                                    :style released-button)
+;;                                              :background ,basic-lightgray
+;;                                              :foreground ,basic-darkgray))))
+     `(mode-line                    ((,class :background "gray90"
+                                             :foreground "gray20")))
+;;     `(mode-line-inactive           ((,class (:box (:line-width -1
+;;                                                    :style released-button)
+;;                                              :background ,basic-white
+;;                                              :foreground ,basic-gray
+;;                                              :bold t))))
+     `(mode-line-inactive           ((,class :background "gray95"
+                                             :foreground "gray50"
+                                             :bold t)))
      ;; Escape and prompt faces
      `(minibuffer-prompt            ((,class (:weight bold
                                               :foreground ,basic-blue))))
@@ -130,7 +135,7 @@ Ansi-Color faces are included.")
      `(font-lock-type-face          ((,class (:foreground ,main-type-name
                                               :weight bold))))
      `(font-lock-constant-face      ((,class (:foreground ,main-label))))
-     `(font-lock-variable-name-face ((,class (:foreground ,color_burgundy))))
+     `(font-lock-variable-name-face ((,class (:foreground ,color-burgundy))))
      `(font-lock-preprocessor-face  ((,class (:foreground ,basic-red))))
      ;; Button and link faces
      `(link                         ((,class (:underline t
@@ -142,13 +147,13 @@ Ansi-Color faces are included.")
      `(outline-1                    ((,class (:inherit nil
                                               :foreground ,basic-red))))
      `(outline-2                    ((,class (:inherit nil
-                                              :foreground ,basic-yellow))))
-     `(outline-3                    ((,class (:inherit nil
-                                              :foreground ,basic-lightpurple))))
-     `(outline-4                    ((,class (:inherit nil
-                                              :foreground ,basic-blue))))
-     `(outline-5                    ((,class (:inherit nil
                                               :foreground ,basic-orange))))
+     `(outline-3                    ((,class (:inherit nil
+                                              :foreground ,basic-blue))))
+     `(outline-4                    ((,class (:inherit nil
+                                              :foreground ,basic-green))))
+     `(outline-5                    ((,class (:inherit nil
+                                              :foreground ,basic-purple))))
      `(outline-6                    ((,class (:inherit nil
                                               :foreground "CadetBlue1"))))
      `(outline-7                    ((,class (:inherit nil
@@ -158,10 +163,19 @@ Ansi-Color faces are included.")
      `(outline-9                    ((,class (:inherit nil
                                               :foreground "LightSteelBlue1"))))
 
+     ;; markdown-mode
+     `(markdown-header-face-1       ((,class (:inherit outline-1 :height 1.6
+					      :weight bold))))
+     `(markdown-header-face-2       ((,class (:inherit outline-2 :height 1.4
+					      :weight bold))))
+     `(markdown-header-face-3       ((,class (:inherit outline-3 :height 1.2
+					      :weight bold))))
+     `(markdown-header-face-4       ((,class (:inherit outline-4 :height 1.0
+					      :weight bold))))
      ;; org-mode
      `(org-agenda-date              ((,class (:foreground ,basic-red))))
      `(org-agenda-date-today        ((,class (:foreground ,basic-green))))
-     `(org-agenda-structure         ((,class (:inherit ,basic-blue))))
+     `(org-agenda-structure         ((,class (:foreground ,basic-blue))))
      `(org-archived                 ((,class (:foreground ,simpleblue-fg
                                               :weight bold))))
      `(org-block                    ((,class (:foreground ,simpleblue-fg))))
@@ -190,30 +204,30 @@ Ansi-Color faces are included.")
      `(org-headline-done            ((,class (:foreground ,basic-lightblue))))
      `(org-hide                     ((,class (:foreground ,simpleblue-bg))))
      `(org-level-1                  ((,class (:weight bold
-                                              :foreground ,color_carrot_orange
+                                              :foreground ,basic-red
                                               :height 1.8))))
      `(org-level-2                  ((,class (:weight bold
-                                              :foreground ,color_carrot_orange
+                                              :foreground ,basic-orange
                                               :height 1.4))))
      `(org-level-3                  ((,class (:weight bold
-                                              :foreground ,color_pannsy
+                                              :foreground ,basic-blue
                                               :height 1.2))))
      `(org-level-4                  ((,class (:weight bold
-                                              :foreground ,color_pannsy))))
+                                              :foreground ,basic-green))))
      `(org-level-5                  ((,class (:weight bold
-                                              :foreground ,color_teal_green))))
+                                              :foreground ,basic-purple))))
      `(org-level-6                  ((,class (:weight bold
-                                              :foreground ,color_teal_green))))
+                                              :foreground ,color-teal-green))))
      `(org-level-7                  ((,class (:weight bold
-                                              :foreground ,color_olive_drab))))
+                                              :foreground ,color-olive-drab))))
      `(org-level-8                  ((,class (:weight bold
-                                              :foreground ,color_olive_drab))))
+                                              :foreground ,color-olive-drab))))
      `(org-level-9                  ((,class (:weight bold
-                                              :foreground ,color_olive_drab))))
+                                              :foreground ,color-olive-drab))))
      `(org-level-10                 ((,class (:weight bold
-                                              :foreground ,color_olive_drab))))
-     `(org-level-11                 ((,class (:foreground ,color_violet))))
-     `(org-level-12                 ((,class (:foreground ,color_violet))))
+                                              :foreground ,color-olive-drab))))
+     `(org-level-11                 ((,class (:foreground ,color-violet))))
+     `(org-level-12                 ((,class (:foreground ,color-violet))))
      `(org-link                     ((,class (:underline t
                                               :foreground ,basic-bluegray))))
      `(org-mode-line-clock          ((,class (:foreground ,basic-bluegray))))

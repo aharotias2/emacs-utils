@@ -128,7 +128,7 @@ Ansi-Color faces are included.")
      `(font-lock-type-face          ((,class (:foreground ,main-type-name
                                               :weight bold))))
      `(font-lock-constant-face      ((,class (:foreground ,main-label))))
-     `(font-lock-variable-name-face ((,class (:foreground ,color_burgundy))))
+     `(font-lock-variable-name-face ((,class (:foreground ,color-burgundy))))
      `(font-lock-preprocessor-face  ((,class (:foreground "red"))))
      ;; Button and link faces
      `(link                         ((,class (:underline t
@@ -188,30 +188,30 @@ Ansi-Color faces are included.")
      `(org-headline-done            ((,class (:foreground ,basic-lightblue))))
      `(org-hide                     ((,class (:foreground ,valadoc-bg))))
      `(org-level-1                  ((,class (:weight bold
-                                              :foreground ,color_carrot_orange
+                                              :foreground ,color-carrot-orange
                                               :height 1.8))))
      `(org-level-2                  ((,class (:weight bold
-                                              :foreground ,color_carrot_orange
+                                              :foreground ,color-carrot-orange
                                               :height 1.4))))
      `(org-level-3                  ((,class (:weight bold
-                                              :foreground ,color_pannsy
+                                              :foreground ,color-pannsy
                                               :height 1.2))))
      `(org-level-4                  ((,class (:weight bold
-                                              :foreground ,color_pannsy))))
+                                              :foreground ,color-pannsy))))
      `(org-level-5                  ((,class (:weight bold
-                                              :foreground ,color_teal_green))))
+                                              :foreground ,color-teal-green))))
      `(org-level-6                  ((,class (:weight bold
-                                              :foreground ,color_teal_green))))
+                                              :foreground ,color-teal-green))))
      `(org-level-7                  ((,class (:weight bold
-                                              :foreground ,color_olive_drab))))
+                                              :foreground ,color-olive-drab))))
      `(org-level-8                  ((,class (:weight bold
-                                              :foreground ,color_olive_drab))))
+                                              :foreground ,color-olive-drab))))
      `(org-level-9                  ((,class (:weight bold
-                                              :foreground ,color_olive_drab))))
+                                              :foreground ,color-olive-drab))))
      `(org-level-10                 ((,class (:weight bold
-                                              :foreground ,color_olive_drab))))
-     `(org-level-11                 ((,class (:foreground ,color_violet))))
-     `(org-level-12                 ((,class (:foreground ,color_violet))))
+                                              :foreground ,color-olive-drab))))
+     `(org-level-11                 ((,class (:foreground ,color-violet))))
+     `(org-level-12                 ((,class (:foreground ,color-violet))))
      `(org-link                     ((,class (:underline t
                                               :foreground ,basic-bluegray))))
      `(org-mode-line-clock          ((,class (:foreground ,basic-bluegray))))
